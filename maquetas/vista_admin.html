@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="../assets/img/logotipo.png" type="image/x-icon">
+    <link rel="stylesheet" href="../assets/css/app.css">
+    <link rel="stylesheet" href="../assets/css/brands.min.css">
+    <link rel="stylesheet" href="../assets/css/fontawesome.min.css">
+    <title>Pagina Principal del Blog</title>
+</head>
+
+<body>
+    <div class="header">
+        <div class="logo">
+            <img class="menu-logo" src="../assets/img/logo2.png" alt="logo de mi blog">
+        </div>
+        <div>
+            <ul class="top-menu">
+                <li><a href="#"><i class="fas fa-home"></i>Inicio</a></li>
+            </ul>
+        </div>
+        <div>
+            <a href="#" class="btn" id="btn_user">
+                USUARIO: Nombre
+            </a>
+            <div id="user_menu">
+                <div class="lista-barra">
+                    <ul>
+                        <li><a href="#">Ver Perfil</a></li>
+                        <li><a href="#">Actualizar Contraseña</a></li>
+                        <li><a href="#">Cerrar</a></li>
+                    </ul>
+                </div> 
+            </div>
+        </div>
+    </div>
+
+    <div class="contenedor-39">
+        <div class="barra-lateral"> 
+            <div class="lista-barra">
+                <h1>Modulos</h1>
+                <ul>
+                    <li><a href="#">Administrar Articulo</a></li>
+                    <li><a href="#">Administrar Hoja de Vida</a></li>
+                    <li><a href="#">Administrar Proyecto</a></li>
+                    <li><a href="#">Administrar Contacto</a></li>
+                </ul>
+            </div>           
+        </div>
+        <div class="contenedor-principal">
+            <div>
+                <h1>Nuevo Ragistro</h1>
+                Contenido de la pagina
+            </div>
+        </div>
+    </div>
+    
+    <div class="contenedor-pie">
+        <div class="contenedor-2filas">
+            <div class="pie">
+                &copy; 2021 Blog Personal de Gregory, todos los derechos reservados.
+            </div>
+        </div>
+    </div>
+    <script>
+        var btn_user = document.getElementById('btn_user');
+        btn_user.addEventListener('click', function(){
+            var user_menu = document.getElementById('user_menu');
+            if(user_menu.style.visibility == "visible"){
+                user_menu.style.visibility = "hidden";
+            }else{
+                user_menu.style.visibility = "visible";
+            }
+        });
+    </script>
+</body>
+
+</html>

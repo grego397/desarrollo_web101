@@ -1,0 +1,32 @@
+@font-face {
+    font-family: 'Ruso';
+    src: url('../fonts/RussoOne-Regular.ttf');
+}
+@font-face {
+    font-family: 'Quick';
+    src: url('../fonts/Quicksand-VariableFont_wght.ttf');
+}
+body {
+    font-family: Quick;
+}
+h2{
+    font-family: Ruso;
+}
+
+div.form-login label{
+    display: block;
+    color: #fff;
+}
+.form-login{
+    width: 50vw;
+    border: 1px solid #ccc;
+    padding: 10px;
+    border-radius: 7px;
+    background-color: #333;
+    margin: 40px auto;
+    clear: both;
+}
+div.form-login h2{
+    color: #fff;
+    font-size: 2rem;
+}

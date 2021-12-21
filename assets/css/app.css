@@ -1,0 +1,366 @@
+/*Definicion de fuentes de texto*/
+@font-face {
+    font-family: 'Ruso';
+    src: url('../fonts/RussoOne-Regular.ttf');
+}
+@font-face {
+    font-family: 'Quick';
+    src: url('../fonts/Quicksand-VariableFont_wght.ttf');
+}
+/*Estilos con selectores de elemento*/
+body {
+    font-family: Quick;
+    font-size: 14px;
+    margin: 0;
+}
+h2{
+    font-family: Ruso;
+}
+h1, h2, h3, h4, h5, h6{
+    margin: 5px;
+    font-family: Ruso;
+}
+a{
+    color: #333;
+    text-decoration: none;
+    transition: all 0.7s linear;
+}
+input, select, textarea, button, .btn{
+    font-family: Quick;
+    padding: 5px 10px;
+    font-size: 1.5em;
+    margin: 7px;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+}
+button, .btn{
+    font-size: 1.1em;
+    margin: 10px 1px;
+    background-color: #eee;
+    border: 1px solid #ccc;
+}
+.btn-oscuro{
+    background-color: #333;
+    color: #fff;
+}
+.btn-oscuro:hover{
+    color: #eee;
+    background-color: #555;
+}
+.btn-claro{
+    background-color: royalblue;
+    color: #fff;
+}
+.btn-claro:hover{
+    color: #eee;
+    background-color: #555;
+}
+/*FORMULARIO LOGIN*/
+.login-page{
+        background-color: transparent;
+        background-image: url(../img/fondo.jpg);
+        background-repeat: no-repeat;
+        background-position: top;
+        background-size: cover;
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+}
+.blog-logo{
+    width:  100%;
+}
+div.form-login label{
+    display: block;
+    color: #fff;
+    font-size: 1.5em;
+}
+.form-login{
+    border: 1px solid #333;
+    padding: 10px;
+    border-radius: 10px;
+    background-color: rgba(30, 30, 30, 0.7);
+    backdrop-filter: blur(3px);
+    text-align:center;
+    margin-top: 100px;
+}
+
+div.form-login h2{
+    color: #fff;
+    font-size: 2rem;
+}
+
+/*Pagina Principal*/
+.header{
+    display: grid;
+    grid-template-columns: 2fr 9fr 3fr;
+    height: 90px;
+    background-color: #333;
+    color: #fff;
+    position: sticky;
+    top: 0;
+    left: 0;
+}
+/*.header{
+    border: 1px solid #fff;
+}*/
+.header .top-menu{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+.top-menu li, .top-menu a{
+    display: block;
+    text-align: center;
+    height: 90px;
+    line-height: 90px;
+    text-decoration: none;
+    color: #fff;
+    font-size: 1.2rem;
+}
+.top-menu a:hover{
+    background-color: #555;
+}
+.menu-logo{
+    width: 100%;
+    margin: 10px 0;
+}
+.header .box-social{
+    display: block;
+    margin: 0;
+    text-align: center;
+}
+.box-social a{
+    color: #fff;
+    line-height: 90px;
+    font-size: 3em;
+    text-decoration: none;
+}
+.box-social a:hover{
+    color: #bbb;
+}
+.banner{
+    height: 600px;
+    background-color: #eee;
+    background-image: url("../img/bg_index.png");
+    background-position: top;
+    background-repeat: no-repeat;
+    background-size: contain;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    align-items: center;
+}
+.banner h1{
+    text-align: center;
+    font-size: 3em;
+}
+.banner p{
+    text-align: justify;
+    padding: 5px 20px;
+}
+.heading-developer{
+    font-family: Quick;
+    font-weight: bold;
+}
+.ultimos-trabajos{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 10px;
+}
+.ultimos-trabajos .work-item{
+    padding: 10px;
+    margin: 0;
+    border: 1px solid #ccc;
+    border-radius: 7px;
+}
+.ultimos-trabajos img{
+    width: 100%;
+    height: 200px;
+    overflow: hidden;
+}
+.ultimos-trabajos p{
+    text-align: justify;
+}
+.contenedor-proyecto{
+    margin: 10px;
+}
+.contenedor-proyecto h1{
+    text-align: center;
+}
+.contenedor-pie{
+    background-image: url("../img/fondo.jpg");
+    background-repeat: no-repeat;
+    background-position: bottom;
+    background-size: cover;
+    background-attachment: fixed;
+}
+.contenedor-2filas{
+    background-color: rgba(30, 30, 30, 0.7);
+    padding: 0;
+    margin: 0;
+    display: grid;
+    grid-template-rows: 1fr 50px;
+    color: #fff;
+}
+.contenedor-listados{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    margin: 10px;
+}
+.contenedor-listados div{
+    margin: 10px;
+}
+.contenedor-listados h2{
+    text-align: center;
+    border-bottom: 1px solid #ccc;
+    padding-bottom: 7px;
+    margin-bottom: 7px;
+}
+.listado-pie{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+.listado-pie li, .listado-pie a{
+    display: block;
+    margin: 3px;
+}
+.listado-pie a{
+    padding: 10px;
+    background-color: rgba(80, 80, 80, 0.5);
+    border-left: 5px solid #777;
+    color: #fff;
+}
+.listado-pie a:hover{
+    border-left: 4px solid #444;
+    background-color: rgba(30, 30, 30, 0.8);
+    color: #ccc;
+}
+.pie{
+    text-align: center;
+    line-height: 50px;
+}
+
+/*PORTAFOLIO*/
+
+.item-portafolio{
+    display: grid;
+}
+.cols-2_1{
+    grid-template-columns: 2fr 1fr;
+}
+.cols-1_2{
+    grid-template-columns: 1fr 2fr;
+}
+.imagen-portafolio{
+    width: 100%;
+    overflow: hidden;
+}
+.descripcion-proyecto{
+    display: grid;
+    align-items: center;
+    padding: 0 30px;
+    text-align: center;
+}
+.bg-negro{
+    color: #fff;
+    background-color: #333;
+}
+
+.contenedor-39{
+    display: grid;
+    background-color: #eee;
+    grid-template-columns: 3fr 9fr;
+}
+.barra-lateral{
+    display: block;
+    background-color: #ccc;
+    min-height: 80vh;
+}
+.lista-barra h1{
+    padding: 10px;
+    border: 1px solid #777;
+}
+.lista-barra ul{
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+.lista-barra li, .lista-barra a{
+    display: block;
+}
+.lista-barra a{
+    margin: 5px;
+    padding: 15px 5px;
+    color: #fff;
+    text-decoration: none;
+    text-transform: uppercase;
+    border-left: 4px solid #333;
+    background-color: rgba(90, 90, 90, 0.85);
+}
+.lista-barra a:hover{
+    border-left: 4px solid #555;
+    background-color: rgba(120, 120, 120, 0.8);
+}
+#btn_user{
+    display: block;
+    margin: 25px 5px;
+    text-align: center;
+    font-size: 1.3em;
+    line-height: 30px;
+    position: relative;
+}
+#user_menu{
+    display: block;
+    background-color: rgba(0, 0, 0, 0.7);
+    border: 1px solid #111;
+    position: absolute;
+    right: 10px;
+    top: 70px;
+    width: 20vw;
+    visibility: hidden;
+}
+table{
+    table-layout: auto;
+    width: 100%;
+    border: 1px solid #777;
+    border-collapse: collapse;
+}
+table, th, td{
+    border: 1px solid #777;
+    padding: 7px;
+}
+.contenedor-principal{
+    padding: 10px;
+}
+
+/*
+============================================
+GRIDS DE FORMULARIO
+============================================
+*/
+.grid-1, .grid-3{
+    display: grid;
+    gap: 10px;
+}
+.grid-1{
+    grid-template-columns: 1fr;
+}
+.grid-3{
+    grid-template-columns: 1fr 1fr 1fr;
+}
+form label{
+    display: block;
+    font-size: 1.2em;
+    line-height: 1.2em;
+    font-weight: bold;
+}
+input, select, textarea{
+    display: block;
+}
+.form-item{
+    display: grid;
+    grid-template-columns: 1fr;
+}
+
+

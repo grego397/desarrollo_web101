@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="img/logotipo.png" type="image/x-icon">
+    <link rel="stylesheet" href="css/app.css">
+    <link rel="stylesheet" href="css/brands.min.css">
+    <link rel="stylesheet" href="css/fontawesome.min.css">
+    <title>Login del Blog</title>
+    <style>
+        body{
+            background-color: transparent;
+            background-image: url(img/fondo.jpg);
+            background-repeat: no-repeat;
+            background-position: top;
+            background-size: cover;
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr;
+        }
+        .blog-logo{
+            width:  100%;
+        }
+    </style>
+</head>
+<body>
+    <div></div>
+    <div class="form-login">
+        <img class="blog-logo" src="img/logo2.png" alt="logo de mi blog">
+        <h2>Formulario de acceso</h2>
+        <form action="ruta.php" method="post">
+            <label for="">Usuario</label>
+            <input type="text" name="usr" id="usr">
+            <label for="">Contraseña</label>
+            <input type="password" name="pwd" id="pwd">
+            <br>
+            <button type="submit"><i class="fas fa-sign-in-alt"></i> Ingresar</button>
+        </form>
+    </div> 
+    <div></div>  
+</body>
+</html>
